@@ -22,7 +22,7 @@ main()
 {
 	setlocale (LC_ALL,"Portuguese");
 	int num,num2,res;
-	printf ("\nDigite um número:");
+	printf ("\nDigite um nÃºmero:");
 	scanf ("%i",&num);
 	if(par(num))
 	{
@@ -30,9 +30,9 @@ main()
 	}
 	else{printf ("\nIMPAR!!!");
 	}
-	printf("\nDigite outro número:");
+	printf("\nDigite outro nÃºmero:");
 	scanf ("%i",&num2);
 	res = soma(num,num2);
-	printf ("\nA soma é: %i",res);
+	printf ("\nA soma Ã©: %i",res);
 	
 }
