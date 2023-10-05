@@ -25,21 +25,21 @@ main()
 	scanf ("%f",&n2);
 	printf ("\nDigite a terceira nota:");
 	scanf ("%f",&n3);
-	printf ("\nEscolhas as opÁıes A para aritmetica e P para media ponderada:");
+	printf ("\nEscolhas as op√ß√µes A para aritmetica e P para media ponderada:");
 	scanf ("%s",&op);
 	
 	switch(op)
 	{
 		
-		case 'a': printf("\nMÈdia Aritmetica");
+		case 'a': printf("\nM√©dia Aritmetica");
 		res = mediaa (n1,n2,n3);
-		printf("\nO resultado ser· %f", res);
+		printf("\nO resultado ser√° %f", res);
 		break;
 		
-		case 'p': printf("\nMÈdia Ponderada");
+		case 'p': printf("\nM√©dia Ponderada");
 		res = mediap (n1,n2,n3);
-		printf("\nO resultado ser· %f",res);
+		printf("\nO resultado ser√° %f",res);
 		break;
-		//default:printf ("ERROR");
+		default:printf ("ERROR");
 	}
 }
