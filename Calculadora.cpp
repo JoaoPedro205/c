@@ -40,47 +40,47 @@ main()
 	setlocale(LC_ALL,"Portuguese");
 	int cod;
 	float num1,num2,num3,res;
-	printf ("\nDigite o primeiro número:");
+	printf ("\nDigite o primeiro nÃºmero:");
 	scanf ("%f",&num1);
-	printf ("\nDigite o segundo número:");
+	printf ("\nDigite o segundo nÃºmero:");
 	scanf ("%f",&num2);
-	printf ("\nDigite o terceiro número:");
+	printf ("\nDigite o terceiro nÃºmero:");
 	scanf ("%f",&num3);
 	
 	do{
-	printf ("\n1.Soma dos números:");
-	printf ("\n2.Subtração de dois números:");
-	printf ("\n3.Multiplicação entre dois números:");
-	printf ("\n4.Divisão entre dois números:");
-	printf ("\n5.Média dos números:");
+	printf ("\n1.Soma dos nÃºmeros:");
+	printf ("\n2.SubtraÃ§Ã£o de dois nÃºmeros:");
+	printf ("\n3.MultiplicaÃ§Ã£o entre dois nÃºmeros:");
+	printf ("\n4.DivisÃ£o entre dois nÃºmeros:");
+	printf ("\n5.MÃ©dia dos nÃºmeros:");
 	printf ("\nDigite o codigo:");
 	scanf ("%i",&cod);
 	
 	switch(cod)
 	{
-		case 1:printf ("\nSoma dos números");
+		case 1:printf ("\nSoma dos nÃºmeros");
 		res = soma(num1,num2,num3);
-		printf ("\nO resultado da soma será %.2f",res);
+		printf ("\nO resultado da soma serÃ¡ %.2f",res);
 		break;
 		
-		case 2:printf ("\nSubtração de 2 números");
+		case 2:printf ("\nSubtraÃ§Ã£o de 2 nÃºmeros");
 		res=subt(num1,num2);
-		printf ("\nO resultado da subtração de dois números será %.2f",res);
+		printf ("\nO resultado da subtraÃ§Ã£o de dois nÃºmeros serÃ¡ %.2f",res);
 		break;
 		
-		case 3:printf ("\nMultiplicação entre 2 números");
+		case 3:printf ("\nMultiplicaÃ§Ã£o entre 2 nÃºmeros");
 		res=multi(num1,num2);
-		printf ("\nO resultado da multiplicação de dois números será %.2f",res);
+		printf ("\nO resultado da multiplicaÃ§Ã£o de dois nÃºmeros serÃ¡ %.2f",res);
 		break;
 		
-		case 4:printf ("\nDivisão entre 2 números");
+		case 4:printf ("\nDivisÃ£o entre 2 nÃºmeros");
 		res=div(num1,num2);
-		printf ("\nO resultado da divisão de dois números será %.2f",res);
+		printf ("\nO resultado da divisÃ£o de dois nÃºmeros serÃ¡ %.2f",res);
 		break;
 		
-		case 5:printf ("\nMédia entre os números");
+		case 5:printf ("\nMÃ©dia entre os nÃºmeros");
 		res=media(num1,num2,num3);
-		printf ("\nA média dos três números será %.2f",res);
+		printf ("\nA mÃ©dia dos trÃªs nÃºmeros serÃ¡ %.2f",res);
 		break;
 		
 		case 6:printf ("\nSaindo do programa.");
