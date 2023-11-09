@@ -19,7 +19,7 @@ struct Time
  {
     for (int i = 0; i < 20; i++) 
 	{
-        printf("Digite o código do time %i: ", i + 1);
+        printf("Digite o cÃ³digo do time %i: ", i + 1);
         scanf("%i", &times[i].codigo);
         printf("Digite o nome do time %i: ", i + 1);
         scanf("%s", times[i].time);
@@ -41,7 +41,7 @@ struct Time
  alterarPontosVitorias(Time times[]) 
  {
     int codigo;
-    printf("Digite o código do time: ");
+    printf("Digite o cÃ³digo do time: ");
     scanf("%i", &codigo);
 
     for (int i = 0; i < 20; i++) 
@@ -50,7 +50,7 @@ struct Time
 		{
             printf("Digite a nova quantidade de pontos: ");
             scanf("%i", &times[i].pontos);
-            printf("Digite a nova quantidade de vitórias: ");
+            printf("Digite a nova quantidade de vitÃ³rias: ");
             scanf("%i", &times[i].vitorias);
             break;
         }
@@ -61,7 +61,7 @@ struct Time
 alterarArtilheiro(Time times[]) 
 {
     int codigo;
-    printf("Digite o código do time: ");
+    printf("Digite o cÃ³digo do time: ");
     scanf("%i", &codigo);
 
     for (int i = 0; i < 20; i++) 
@@ -117,10 +117,10 @@ alterarArtilheiro(Time times[])
 
     int opcao;
     do {
-        printf("\nEscolha uma opção:");
+        printf("\nEscolha uma opÃ§Ã£o:");
         printf("\n1. Cadastrar times");
         printf("\n2. Atribuir zero aos campos");
-        printf("\n3. Alterar pontos e vitórias");
+        printf("\n3. Alterar pontos e vitÃ³rias");
         printf("\n4. Alterar artilheiro");
         printf("\n5. Informar vencedor do campeonato");
         printf("\n6. Informar artilheiro do time com mais gols");
@@ -148,10 +148,10 @@ alterarArtilheiro(Time times[])
                 informarArtilheiroGols(times);
                 break;
             case 0:
-                printf("\nFinalizando navegação.");
+                printf("\nFinalizando navegaÃ§Ã£o.");
                 break;
             default:
-                printf("\nOpção inválida. Tente novamente mais tarde.");
+                printf("\nOpÃ§Ã£o invÃ¡lida. Tente novamente mais tarde.");
         }
     } while (opcao != 0);
 }
