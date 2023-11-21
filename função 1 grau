@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <locale.h>
+
+float calcularfuncoes(float x, float *y1,float *y2,float *y3)
+{
+	*y1 = x + 2;
+    *y2 = 3 * x - 4;
+    *y3 = 5 * x;
+}
+main()
+{
+	setlocale(LC_ALL,"Portuguese");
+	float x,y1,y2,y3;
+	printf("Digite um valor para x: ");
+    scanf("%f", &x);
+    calcularfuncoes(x, &y1, &y2, &y3);
+    printf("Para y = x + 2,o valor de y é: %.2f\n",y1);
+    printf("Para y = 3x - 4,o valor de y é: %.2f\n",y2);
+    printf("Para y = 5x,o valor de y é: %.2f\n",y3);
+
+}
